@@ -1,0 +1,126 @@
+.hide {
+   display: none;
+}
+body{
+   overflow-y: scroll;   /* force vert scroll-bars */
+}
+
+.SiteContainer{
+   height: 100vh;
+}
+.MainContent {
+   height: 95vh;
+   width: 70%;
+   float: left;
+   max-width: 1200px;
+}
+.LeftContent{
+   height: 95vh;
+   float: left;
+   width: 15%;
+   min-width: 30px;
+}
+.LeftContent img {
+   max-width: 60%;
+   min-width: 70px;
+   padding: 0 10px 0 0;   /* top right bottom left*/
+   margin: 0 10px 0 0;   /* top right bottom left*/
+}
+
+ .RightContent {
+   height: 95vh;
+   width: 15%;
+   float: right;
+}
+
+.header {
+   height: 80px;
+}
+.copyright {
+   font-size: 12px;
+   font-stretch: 100%;
+   font-weight: 700;   
+   margin: 5em 0 1em -10em;   /* top right bottom left*/
+}
+
+h1,
+h2,
+h3 {
+   font-family: 'open sans', sans-serif;
+   font-weight: 200;
+   padding: 8px 8px 8px 8px;
+   color: rgba(28, 38, 123, 1);
+}
+
+h1 {
+   margin: .2em .5em;
+}
+
+h2 {
+   margin: .2em .5em;
+}
+
+h3 {
+   font-size: 13px;
+   font-weight: 700;
+   margin: .2em .2em .5em .5em;   /* top right bottom left*/
+}
+
+nav ul {
+   list-style: none;
+   padding: 0;
+   margin: 0;
+}
+
+nav ul li {
+   display: inline-flex;
+   max-width: fit-content;
+}
+
+#menu {
+   width: 100%;
+}
+
+.menu-title-row{
+   border-top-style: solid;
+   border-top-width: 1px;
+   border-top-color: rgba(28, 38, 123, 1);
+   width: 220px;
+   text-align: center;
+}
+
+.menu-selected {
+   border-top-style: solid;
+   border-top-width: 5px;
+   border-top-color: rgba(28, 38, 123, 1);
+}
+
+/*** tabbed content ***/
+#pages #sculptures,
+#pages #paintings,
+#pages #drawings,
+#pages #about {
+   width: 90%;
+   max-width: 800px;
+   margin: 5em 0 0 2em;   /* top right bottom left*/
+}
+@media only screen and (max-width: 1283px) {
+   #pages #sculptures,
+   #pages #paintings,
+   #pages #drawings,
+   #pages #about {
+      width: 80%;
+      margin: 2em 0 0 0;      /* top right bottom left*/
+   }
+}
+@media only screen and (max-width: 960px) {
+   #pages #sculptures,
+   #pages #paintings,
+   #pages #drawings,
+   #pages #about {
+      width: 70%;
+      min-width: 255px;
+      margin: 1em 0 0 -1.5em;   /* top right bottom left*/
+   }
+}
+

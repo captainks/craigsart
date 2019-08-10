@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <meta charset="utf-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <title>A simple DIY responsive slideshow made with HTML5, CSS3, and JavaScript</title>
+   <meta name="description" content="">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link href='http://fonts.googleapis.com/css?family=Open+Sans|Open+Sans+Condensed:700' rel='stylesheet'
+      type='text/css'>
+   <link rel="icon" type="image/png" href="favicon.png">
+   <!--place bootstrap 1st  so custom CSS can override -->
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <link rel="stylesheet" href="css/bss-styles.css">
+   <link rel="stylesheet" href="css/simple-slideshow-styles.css">
+   <link rel="stylesheet" href="css/other-styles.css">
+   <link rel="stylesheet" href="css/debug.css">
+   <!--<link rel="stylesheet" href="demo/css/demostyles.css">-->
+   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+   <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+   <div class="SiteContainer showboxBlack" height="100%">
+      <div class="header showboxRed"></div>
+      <div>
+         <div>
+            <span class="LeftContent showboxGreen">
+               <img src="img/craigsart_sig.jpg" />
+            </span>
+            <span class="MainContent showboxBlue">
+               <div>
+                  <nav>
+                     <ul id="menu" class="menu">
+                        <li>
+                           <div class="menu-title-row menu-selected"><a data-page="sculptures" href="#"><h3>SCULPTURES</h3></a></div>
+                        </li>
+                        <li>
+                           <div class="menu-title-row"><a data-page="paintings" href="#"><h3>PAINTINGS</h3></a></div>
+                        </li>
+                        <li>
+                           <div class="menu-title-row"><a data-page="drawings" href="#"><h3>DRAWINGS</h3></a></div>
+                        </li>
+                        <li>
+                           <div class="menu-title-row"><a data-page="about" href="#"><h3>ABOUT</h3></a></div>
+                        </li>
+                     </ul>
+                  </nav>
+               </div>
+               
+               <div id="pages">
+                  <div id="sculptures" class="page" data-page="sculptures">
+                     <div class="row">
+                        <div class="columns large-6">
+                           <div class="bss-slides num1" tabindex="1" autofocus="autofocus">
+                              <figure>
+                                 <img src="img/art/4AROUND0.jpg" width="100%" />
+                                 <figcaption>4 Around a Fire</figcaption>
+                              </figure>
+                              <figure>
+                                 <img src="img/art/fruitoa0.jpg" width="100%" />
+                                 <figcaption>Fruit Oasis</figcaption>
+                              </figure>
+                              <figure>
+                                 <img src="img/art/onestar0.jpg" width="100%" />
+                                 <figcaption>One Starry Night</figcaption>
+                              </figure>
+                              <figure>
+                                 <img src="img/art/selfpor0.jpg" width="100%" />
+                                 <figcaption>Self Portrait</figcaption>
+                              </figure>
+                           </div> <!-- // bss-slides -->
+                        </div>
+                     </div>
+                  </div>
+                  <div id="paintings" class="page hide" data-page="paintings">
+                     <div class="row">
+                        <div class="columns large-6">
+                           <div class="bss-slides num1" tabindex="1" autofocus="autofocus">
+                              <figure>
+                                 <img src="img/art/deeptht0.jpg" width="100%" />
+                                 <figcaption>4 Around a Fire</figcaption>
+                              </figure>
+                              <figure>
+                                 <img src="img/art/twins0.jpg" width="100%" />
+                                 <figcaption>Fruit Oasis</figcaption>
+                              </figure>
+                              <figure>
+                                 <img src="img/art/motherc0.jpg" width="100%" />
+                                 <figcaption>One Starry Night</figcaption>
+                              </figure>
+                              <figure>
+                                 <img src="img/art/goldnm0.jpg" width="100%" />
+                                 <figcaption>Self Portrait</figcaption>
+                              </figure>
+                           </div> <!-- // bss-slides -->
+                        </div>
+                     </div>
+                  </div>
+                  <div id="drawings" class="page hide" data-page="drawings">
+                     <div class="row">
+                        <div class="columns large-6">
+                           <h1> Drawings </h1>
+                           <p> Lorem ipsum drawings </p>
+                        </div>
+                     </div>
+                  </div>
+                  <div id="about" class="page hide" data-page="about">
+                     <div class="row">
+                        <div class="columns large-6">
+                           <h1> About </h1>
+                           <p> Lorem ipsum about </p>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+
+               <div class="copyright showboxYellow">© 2015 by CRAIG SNYDER</div>
+               <div class="footer showboxPink">&nbsp;</div>
+            </span>
+            <span class="RightContent showboxGrey">
+               <div>&nbsp;</div>
+            </span>
+         </div>
+      </div>
+   </div>
+
+   <script src="js/better-simple-slideshow.js"></script>
+   <script src="js/tab.events.js"></script>
+   <script src="demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
+   <script>
+      var opts = {
+         //auto-advancing slides? accepts boolean (true/false) or object
+         auto: {
+            // speed to advance slides at. accepts number of milliseconds
+            speed: 3500,
+            // pause advancing on mouseover? accepts boolean
+            pauseOnHover: true
+         },
+         // show fullscreen toggle? accepts boolean
+         fullScreen: false,
+         // support swiping on touch devices? accepts boolean, requires hammer.js
+         swipe: true
+      };
+      makeBSS('.num1', opts);
+
+      var opts2 = {
+         auto: false,
+         fullScreen: true,
+         swipe: true
+      };
+      makeBSS('.num2', opts2);
+   </script>
+
+</body>
+
+</html>
