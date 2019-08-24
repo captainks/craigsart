@@ -38,23 +38,23 @@
                   <nav>
                      <ul id="menu" class="menu">
                         <li>
-                           <div class="menu-title-row menu-selected"><a data-page="sculptures" href="#"><h3>SCULPTURES</h3></a></div>
+                           <div id="menu_sculptures" class="menu-title-row menu-selected"><a data-page="sculptures" href="#"><h3>SCULPTURES</h3></a></div>
                         </li>
                         <li>
-                           <div class="menu-title-row"><a data-page="paintings" href="#"><h3>PAINTINGS</h3></a></div>
+                           <div id="menu_paintings" class="menu-title-row"><a data-page="paintings" href="#"><h3>PAINTINGS</h3></a></div>
                         </li>
                         <li>
-                           <div class="menu-title-row"><a data-page="drawings" href="#"><h3>DRAWINGS</h3></a></div>
+                           <div id="menu_drawings" class="menu-title-row"><a data-page="drawings" href="#"><h3>DRAWINGS</h3></a></div>
                         </li>
                         <li>
-                           <div class="menu-title-row"><a data-page="about" href="#"><h3>ABOUT</h3></a></div>
+                           <div id="menu_about" class="menu-title-row"><a data-page="about" href="#"><h3>ABOUT</h3></a></div>
                         </li>
                      </ul>
                   </nav>
                </div>
                
                <div id="pages">
-                  <div id="sculptures" class="page" data-page="sculptures">
+                  <div id="pages_sculptures" class="page" data-page="sculptures">
                      <div class="row">
                         <div class="columns large-6">
                            <div class="bss-slides num1" tabindex="1" autofocus="autofocus">
@@ -78,7 +78,7 @@
                         </div>
                      </div>
                   </div>
-                  <div id="paintings" class="page hide" data-page="paintings">
+                  <div id="pages_paintings" class="page hide" data-page="paintings">
                      <div class="row">
                         <div class="columns large-6">
                            <div class="bss-slides num1" tabindex="1" autofocus="autofocus">
@@ -102,7 +102,7 @@
                         </div>
                      </div>
                   </div>
-                  <div id="drawings" class="page hide" data-page="drawings">
+                  <div id="pages_drawings" class="page hide" data-page="drawings">
                      <div class="row">
                         <div class="columns large-6">
                            <h1> Drawings </h1>
@@ -110,7 +110,7 @@
                         </div>
                      </div>
                   </div>
-                  <div id="about" class="page hide" data-page="about">
+                  <div id="pages_about" class="page hide" data-page="about">
                      <div class="row">
                         <div class="columns large-6">
                            <h1> About </h1>
@@ -132,6 +132,7 @@
 
    <script src="js/better-simple-slideshow.js"></script>
    <script src="js/tab.events.js"></script>
+   <script src="js/craigsart.js"></script>
    <script src="demo/js/hammer.min.js"></script><!-- for swipe support on touch interfaces -->
    <script>
       var opts = {
