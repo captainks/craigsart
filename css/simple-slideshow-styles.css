@@ -35,12 +35,31 @@ figcaption {
 }
 
 .bss-slides figcaption{
-  position: absolute;
-  font-family: sans-serif;
-  font-size: .8em;
+  vertical-align: top;
+  text-align: left;
+  position: sticky;
   bottom: .75em;
   right: .35em;
   padding: .25em;
+  font-family: Tahoma, Geneva, sans-serif;
+  font-size: 17px;
+  letter-spacing: -0.2px;
+  word-spacing: -1.6px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: small-caps;
+  text-transform: uppercase;  
+  background-color: #fff;
+}
+/* .bss-slides figcaption{
+  position: absolute;
+  bottom: .75em;
+  right: .35em;
+  padding: .25em;
+  font-family: sans-serif;
+  font-size: .8em;
   color: #fff;
   background: #000;
   background: rgba(0,0,0, .25);
@@ -48,7 +67,8 @@ figcaption {
   opacity: 0;
   -webkit-transition: opacity 1.2s;
   transition: opacity 1.2s;
-}
+} */
+
 .bss-slides .bss-show figcaption{
   z-index: 3;
   opacity: 1;
